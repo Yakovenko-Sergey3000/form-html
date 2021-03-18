@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <form action="#" class="form">
+            <nav class="form__nav">
+                <a class="nav__item active" href="log-in.html">log in</a>
+                <a class="nav__item" href="check-in.html">check in</a>
+            </nav>
+
+            <div class="form__inputs">
+                <label class="form__lable" for="name">username</label>
+                <input class="form__input" type="text" id="name">
+
+                <label class="form__lable" for="password">password</label>
+                <input class="form__input" type="password" id="password">
+
+                <div class="form__checkbox">
+                    <label  class="form__fake-checkbox" for="checkbox"></label>
+                    <span class="form__fake-checkbox-text">Remember me?</span>
+                    
+                    <input  class="form__checkbox-hide" type="checkbox" id="checkbox">
+                </div>
+                
+
+
+            </div>
+
+            <button class="form__btn" type="submit" >log in</button>
+
+            <div class="form__footer">
+                <a href="#" class="form__help">Forgot your password?</a>
+            </div>    
+
+
+
+            
+        </form>
+
+        <script>
+            const checkbox = document.querySelector('.form__fake-checkbox');
+
+            checkbox.addEventListener('click', () => {
+                checkbox.classList.toggle('active');
+            })
+        </script>
+    </div>
+    
+</body>
+</html>
