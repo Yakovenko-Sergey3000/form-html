@@ -6,6 +6,7 @@
 
 body{
     margin: 0;
+    margin: 0 auto;
     background-image: url('/img/bg.jpg');
     background-size: cover;
     background-repeat: no-repeat;
@@ -28,8 +29,8 @@ select {
 /* Container */
 
 .container {
-    width: 100vh;
-    margin: 0 auto;
+    width: 100%;
+    
 }
 
 /* Form */
@@ -95,13 +96,11 @@ select {
 .form__input:focus {
     outline: none;
     border: 3px solid rgba(118, 216, 255, 0.644);
-
-}
-
-.form__input:focus{
     background-color: rgba(209, 209, 209, 0.6);
-
 }
+
+
+
 
 
 /* Checkbox */
