@@ -111,7 +111,7 @@ select {
     align-items: center;
 }
 
-.form__fake-checkbox{
+.checkbox__fake{
     width: 70px;
     height: 35px;
     position: relative;
@@ -120,13 +120,13 @@ select {
 
 }
 
-.form__fake-checkbox:focus{
+.checkbox__fake:focus{
    background-color: brown;
 
 }
 
 
-.form__fake-checkbox::before{
+.checkbox__fake::before{
     content: "";
     display: block;
     width: 15px;
@@ -140,18 +140,18 @@ select {
 }
 
 
-.form__fake-checkbox.active{
+.checkbox__fake.active{
     background-color: rgb(236, 236, 236);
 }
 
-.form__fake-checkbox.active::before{
+.checkbox__fake.active::before{
     transform: translateX(40px);
     background-color: rgb(53, 53, 53);
 
     
 }
 
-.form__fake-checkbox-text{
+.checkbox__text{
     margin-left: 20px;
     font-size: 16px;
     font-style: italic;
@@ -159,11 +159,12 @@ select {
     color: rgb(226, 223, 223);
 }
 
-.form__checkbox-hide{
+.checkbox__hide{
     position: absolute;
     z-index: -1;
     opacity: 0;
 }
+
 
 
 

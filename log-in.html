@@ -25,10 +25,10 @@
                 <input class="form__input" type="password" id="password">
 
                 <div class="form__checkbox">
-                    <label  class="form__fake-checkbox" for="checkbox"></label>
-                    <span class="form__fake-checkbox-text">Remember me?</span>
+                    <label  class="checkbox__fake" for="checkbox"></label>
+                    <span class="checkbox__text">Remember me?</span>
                     
-                    <input  class="form__checkbox-hide" type="checkbox" id="checkbox">
+                    <input  class="checkbox__hide" type="checkbox" id="checkbox">
                 </div>
                 
 
@@ -47,7 +47,7 @@
         </form>
 
         <script>
-            const checkbox = document.querySelector('.form__fake-checkbox');
+            const checkbox = document.querySelector('.checkbox__fake');
 
             checkbox.addEventListener('click', () => {
                 checkbox.classList.toggle('active');
