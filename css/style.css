@@ -41,8 +41,7 @@ select {
     margin: 20px auto;
     padding: 40px 30px;
     border-radius: 20px;
-    opacity: .9;
-    background-color: rgb(86, 52, 109);
+    background-color: rgba(86, 52, 109, .9);
 }
 
 /* Nav */
@@ -75,7 +74,7 @@ select {
 
 .form__lable{
     display: block;
-    margin: 10px 0 0 20px;
+    margin: 20px 0 0 20px;
     font-size: 15px;
     text-transform: uppercase;
     color: rgb(226, 223, 223);
