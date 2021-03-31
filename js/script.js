@@ -11,8 +11,15 @@ const form = document.querySelector('.form'),
             after.textContent = text
         
             elem.before(after);
+            
+            elem.style.backgroundColor = 'rgba(255, 74, 74, .9)';
+
+            elem.addEventListener('focus', () => {
+                elem.style.backgroundColor = '';
+            })
     };
 
+    
 const validInput = (type, elem, twoElem = null) => {
     switch (type) {
         case 'fullname':
